@@ -9543,7 +9543,9 @@ class TestMultithreadAutograd(TestCase):
 # implicitly by the loader, so Flake8 thinks they are unused, hence
 # the suppressions.
 
+from autograd.test_codegen import TestCreateDerivative, TestGenAutogradFunctions  # noqa: F401
 from autograd.test_complex import TestAutogradComplex  # noqa: F401
+
 
 # e.g., TestAutogradDeviceTypeCPU and TestAutogradDeviceTypeCUDA
 instantiate_device_type_tests(
